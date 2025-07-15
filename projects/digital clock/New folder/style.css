@@ -1,0 +1,51 @@
+/* Google Font for digital effect */
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap'); */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff00cc, #333399, #00ffff, #ffcc00);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Animation for moving gradient */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Fixed clock box */
+.clock-container {
+    width: 400px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+}
+
+/* Clock digits */
+.clock-container span {
+    font-size: 50px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.clock-container span:hover {
+    transform: scale(1.2);
+    color: #00ffcc;
+}
