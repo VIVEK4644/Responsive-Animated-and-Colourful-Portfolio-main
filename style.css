@@ -927,7 +927,7 @@ section:nth-child(odd) .animate.scroll,
 
     .vivek{
         max-width: 100%;
-        height: auto;
+        /* height: auto; */
     }
 
     .home-sci {
