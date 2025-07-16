@@ -101,7 +101,7 @@ section {
 .vivek{
     border-radius: 40px;
     height: 400px;
-    width: 300px;
+    width: 350px;
     
 }
 
@@ -925,12 +925,9 @@ section:nth-child(odd) .animate.scroll,
         flex-direction: column;
     }
 
-    #home{
-         width: 250px;
+    .vivek{
+        max-width: 100%;
         height: auto;
-        display: block;
-        margin: 0 auto;
-        padding-top: 20px;
     }
 
     .home-sci {
@@ -966,11 +963,9 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 371px) {
     .home {
         justify-content: center;
-       
-
     }
 
     .home-content {
@@ -1033,4 +1028,3 @@ section:nth-child(odd) .animate.scroll,
         width: 0;
     }
 }
-
