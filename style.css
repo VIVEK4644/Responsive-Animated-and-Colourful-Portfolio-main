@@ -92,6 +92,7 @@ section {
     background-position: center;
 }
 
+
 .home-content {
     max-width: 60rem;
     z-index: 99;
@@ -100,8 +101,12 @@ section {
 .vivek{
     border-radius: 40px;
     height: 400px;
-    width: 350px;
+    width: 300px;
+    
 }
+
+
+
 
 .home-content h1 {
     position: relative;
@@ -920,6 +925,14 @@ section:nth-child(odd) .animate.scroll,
         flex-direction: column;
     }
 
+    #home{
+         width: 250px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
     .home-sci {
         width: 160px;
     }
@@ -953,9 +966,12 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media (max-width: 371px) {
+@media (max-width: 360px) {
     .home {
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
     }
 
     .home-content {
@@ -1018,3 +1034,4 @@ section:nth-child(odd) .animate.scroll,
         width: 0;
     }
 }
+
