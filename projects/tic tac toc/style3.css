@@ -1,0 +1,143 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  margin: 30px 0;
+  font-size: 3rem;
+  color: #00f9ff;
+  /* text-shadow: 0 0 10px #00f9ff, 0 0 20px #00f9ff; */
+}
+
+/* Winner Message Container */
+.main-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 25px 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+#msg {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffbf;
+  margin-bottom: 15px;
+  /* text-shadow: 0 0 8px #00ffbf; */
+}
+
+/* Buttons (shared style) */
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* New Game Button */
+.newgamebtn {
+  background-color: #00f9ff;
+  color: #000;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  
+
+  /* box-shadow: 0 0 10px #00f9ff, 0 0 20px #00f9ff; */
+}
+
+.new-btn:hover {
+  background-color: #00d4e0;
+  transform: scale(1.05);
+}
+
+/* Game board container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 15px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.1);
+  color: #00f9ff;
+  font-size: 2.5rem;
+  /* box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);  */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.box:hover {
+  background-color: rgba(0, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
+/* Reset Button */
+.resetbtn {
+  margin-top: 30px;
+  background-color: #ff007f;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  /* margin: 200PX; */
+  margin-left: 97PX;
+  /* box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f; */
+}
+
+.resetbtn:hover {
+  background-color: #e60073;
+  transform: scale(1.05);
+}
+
+/* Optional: Hide message container initially */
+.hide {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .game {
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 10px;
+  }
+
+  .box {
+    font-size: 2rem;
+  }
+
+  .new-btn,
+  .resetbtn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
