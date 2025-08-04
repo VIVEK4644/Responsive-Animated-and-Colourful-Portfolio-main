@@ -1,0 +1,103 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    background: #1e1e2f;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    color: #ffce54;
+    text-shadow: 2px 2px #333;
+}
+
+/* Choice images */
+.choices {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.choice {
+    border-radius: 3px solid #fff;
+    /* border-radius: 15px; */
+    /* padding: 15px; */
+    transition: transform 0.2s ease;
+    /* background-color: #2c2c3e; */
+    cursor: pointer;
+}
+
+.choice:hover {
+    /* transform: scale(1.1); */
+    border-color: #ffce54;
+}
+
+.choice img {
+    height: 141px;
+    width: 160px;
+    /* object-fit: contain; */
+    border-radius: 50%;
+    background-size: cover;
+}
+
+/* Score board */
+.score-board {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 30px;
+}
+
+.score {
+    text-align: center;
+}
+
+.score p:first-child {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #58d68d;
+}
+
+.score p:last-child {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+}
+
+/* Message box */
+.msgcontainer {
+    background-color: #333;
+    padding: 15px 25px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px #444; */
+    /* background-color: red; */
+}
+
+#msg {
+    font-size: 1.4rem;
+    color: #ffce54;
+    /* background-color: red; */
+}
+
+
+.rsGame{
+    color: black;
+    background-color: #58d68d;
+    height: 50px;
+    width: 100px;
+    border-radius: 70px;
+    margin-top: 20px;
+}
+
+
